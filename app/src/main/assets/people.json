@@ -5,7 +5,7 @@
     "age": 35,
     "nation": "USA",
     "musicType": "Pop / Country",
-    "imageUrl": "https://source.unsplash.com/200x200/?taylor%20swift"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png/500px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png"
   },
   {
     "firstName": "Nicki",
@@ -13,7 +13,7 @@
     "age": 42,
     "nation": "Trinidad and Tobago",
     "musicType": "Hip Hop / Rap",
-    "imageUrl": "https://source.unsplash.com/200x200/?nicki%20minaj"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Nicki_Minaj_MTV_VMAs_4.jpg/500px-Nicki_Minaj_MTV_VMAs_4.jpg"
   },
   {
     "firstName": "Tate",
@@ -21,7 +21,7 @@
     "age": 21,
     "nation": "Canada",
     "musicType": "Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?tate%20mcrae"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Tate_McRae_on_iHeartRadio_Canada_in_2023_%281%29.png/500px-Tate_McRae_on_iHeartRadio_Canada_in_2023_%281%29.png"
   },
   {
     "firstName": "Gracie",
@@ -29,7 +29,7 @@
     "age": 25,
     "nation": "USA",
     "musicType": "Indie Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?gracie%20abrams"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Gracie_Abrams_%40_El_Rey_Theatre_03_05_2022_%2852297976064%29_%28cropped%29_%282%29.jpg/500px-Gracie_Abrams_%40_El_Rey_Theatre_03_05_2022_%2852297976064%29_%28cropped%29_%282%29.jpg"
   },
   {
     "firstName": "Becky",
@@ -37,7 +37,7 @@
     "age": 28,
     "nation": "USA",
     "musicType": "Pop / Latin",
-    "imageUrl": "https://source.unsplash.com/200x200/?becky%20g"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Becky_G_2023_01.jpg"
   },
   {
     "firstName": "Karol",
@@ -45,7 +45,7 @@
     "age": 34,
     "nation": "Colombia",
     "musicType": "Reggaeton / Latin Trap",
-    "imageUrl": "https://source.unsplash.com/200x200/?karol%20g"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/2023-11-16_Gala_de_los_Latin_Grammy%2C_15.jpg/500px-2023-11-16_Gala_de_los_Latin_Grammy%2C_15.jpg"
   },
   {
     "firstName": "Selena",
@@ -53,7 +53,7 @@
     "age": 32,
     "nation": "USA",
     "musicType": "Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?selena%20gomez"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg/500px-Selena_Gomez_at_the_2024_Toronto_International_Film_Festival_10_%28cropped%29.jpg"
   },
   {
     "firstName": "Natti",
@@ -61,7 +61,7 @@
     "age": 38,
     "nation": "Dominican Republic",
     "musicType": "Reggaeton / Latin Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?natti%20natasha"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/86/Natti_Natasha_2019.jpg"
   },
   {
     "firstName": "Megan",
@@ -69,7 +69,7 @@
     "age": 30,
     "nation": "USA",
     "musicType": "Hip Hop / Rap",
-    "imageUrl": "https://source.unsplash.com/200x200/?megan%20thee%20stallion"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Megan_Thee_Stallion_%28cropped%29.jpeg/500px-Megan_Thee_Stallion_%28cropped%29.jpeg"
   },
   {
     "firstName": "Marina",
@@ -77,7 +77,7 @@
     "age": 38,
     "nation": "Greece",
     "musicType": "World / Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?marina%20satti"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Marina_Satti_Eurovision_Song_Contest_2024_Final_dress_rehearsal_01.jpg/500px-Marina_Satti_Eurovision_Song_Contest_2024_Final_dress_rehearsal_01.jpg"
   },
   {
     "firstName": "Elettra",
@@ -85,7 +85,7 @@
     "age": 30,
     "nation": "Italy",
     "musicType": "Pop / Dance",
-    "imageUrl": "https://source.unsplash.com/200x200/?elettra%20lamborghini"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Elettra_Lamborghini_Radio_Bruno_Festival_di_Sanremo_2020b.png/500px-Elettra_Lamborghini_Radio_Bruno_Festival_di_Sanremo_2020b.png"
   },
   {
     "firstName": "Ice",
@@ -93,7 +93,7 @@
     "age": 25,
     "nation": "USA",
     "musicType": "Hip Hop / Rap",
-    "imageUrl": "https://source.unsplash.com/200x200/?ice%20spice"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Ice_Spice_%28color_corrected%29.png/500px-Ice_Spice_%28color_corrected%29.png"
   },
   {
     "firstName": "Anne",
@@ -101,6 +101,6 @@
     "age": 34,
     "nation": "UK",
     "musicType": "Pop",
-    "imageUrl": "https://source.unsplash.com/200x200/?anne%20marie"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Anne-Marie-4250_%28cropped%29.jpg/500px-Anne-Marie-4250_%28cropped%29.jpg"
   }
 ]
