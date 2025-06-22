@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
+import coil.compose.AsyncImage
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -36,6 +37,14 @@ fun CustomItem(person: Person) {
             .fillMaxWidth()
             .height(IntrinsicSize.Min)
     ) {
+        AsyncImage(
+            model = person.imageUrl,
+            contentDescription = null,
+            modifier = Modifier
+                .width(64.dp)
+                .padding(8.dp)
+        )
+        TableDivider()
         columns.forEachIndexed { index, (value, weight, style) ->
             if (index > 0) TableDivider()
             TableCell(text = value, weight = weight, style = style)
@@ -79,7 +88,8 @@ fun CustomItemPreview() {
             lastName = "K",
             age = 42,
             nation = "Italy",
-            musicType = "Pop / Rap"
+            musicType = "Pop / Rap",
+            imageUrl = "https://picsum.photos/seed/baby/200"
         )
     )
 }
