@@ -4,6 +4,7 @@ package com.halil.ozel.recyclerviewsample
  * Created by halilozel1903 on 11.05.2025.
  */
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -26,11 +27,15 @@ import coil.compose.AsyncImage
 import androidx.compose.ui.layout.ContentScale
 
 @Composable
-fun CustomItem(person: Person) {
+fun CustomItem(
+    person: Person,
+    onClick: () -> Unit
+) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 12.dp, vertical = 6.dp),
+            .padding(horizontal = 12.dp, vertical = 6.dp)
+            .clickable { onClick() },
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.elevatedCardColors()
     ) {
@@ -43,7 +48,7 @@ fun CustomItem(person: Person) {
             AsyncImage(
                 model = person.imageUrl,
                 contentDescription = null,
-                contentScale = ContentScale.Crop,
+                contentScale = ContentScale.Fit,
                 modifier = Modifier
                     .size(64.dp)
                     .clip(RoundedCornerShape(8.dp))
@@ -53,16 +58,12 @@ fun CustomItem(person: Person) {
 
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "${person.firstName} ${person.lastName}",
+                    text = "\uD83C\uDFB6 ${person.firstName} ${person.lastName}",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
                 Text(
-                    text = "${person.age} • ${person.nation}",
-                    style = MaterialTheme.typography.bodyMedium
-                )
-                Text(
-                    text = person.musicType,
+                    text = "\uD83C\uDF82 ${person.age}",
                     style = MaterialTheme.typography.bodyMedium
                 )
             }
@@ -81,6 +82,7 @@ fun CustomItemPreview() {
             nation = "Italy",
             musicType = "Pop / Rap",
             imageUrl = "https://picsum.photos/seed/baby/200"
-        )
+        ),
+        onClick = {}
     )
 }
