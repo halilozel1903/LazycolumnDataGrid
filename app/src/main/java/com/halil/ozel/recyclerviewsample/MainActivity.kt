@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             val people = viewModel.people.collectAsState().value
-            RecyclerViewSampleTheme  {
+            RecyclerViewSampleTheme {
                 PersonList(people)
             }
         }

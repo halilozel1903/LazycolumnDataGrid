@@ -18,6 +18,6 @@ class PersonRepository @Inject constructor(
             .bufferedReader()
             .use { it.readText() }
         val type = object : TypeToken<List<Person>>() {}.type
-        emit(Gson().fromJson<List<Person>>(json, type))
+        emit(Gson().fromJson(json, type))
     }
 }
