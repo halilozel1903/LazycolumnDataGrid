@@ -86,15 +86,28 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
 
 ```
 ├── app/
-│   ├── src/main/java/…/data/                # Data layer implementation
-│   ├── src/main/java/…/domain/              # Domain layer interfaces & models
-│   ├── src/main/java/…/di/                  # Hilt modules
-│   ├── src/main/java/…/MainActivity.kt      # Hosts PersonList()
-│   ├── src/main/java/…/CustomItem.kt        # TableCell + Divider composables
-│   └── src/main/java/…/PersonViewModel.kt   # MVVM ViewModel
-├── docs/
-│   └── screenshots/                         # Paste your screenshots here
-└── README.md                                # ← you are here!
+│   ├── src/main/
+│   │   ├── AndroidManifest.xml
+│   │   ├── assets/people.json
+│   │   └── java/com/halil/ozel/recyclerviewsample/
+│   │       ├── data/                # Repository implementation
+│   │       ├── di/                  # Hilt modules
+│   │       ├── domain/              # Repository interfaces
+│   │       ├── ui/theme/            # Compose theme definitions
+│   │       ├── CustomItem.kt
+│   │       ├── EmojiUtils.kt
+│   │       ├── MainActivity.kt
+│   │       ├── MyApplication.kt
+│   │       ├── Person.kt
+│   │       └── PersonViewModel.kt
+│   ├── src/androidTest/             # Instrumentation tests
+│   └── src/test/                    # Unit tests
+├── gradle/                          # Wrapper and version catalog
+├── build.gradle.kts                 # Root Gradle build file
+├── settings.gradle.kts              # Module declarations
+├── gradlew & gradlew.bat            # Gradle wrappers
+├── README.md                        # ← you are here!
+└── *.png                            # App screenshots
 ```
 
 ---
