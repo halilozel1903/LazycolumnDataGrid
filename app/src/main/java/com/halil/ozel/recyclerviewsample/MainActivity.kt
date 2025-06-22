@@ -34,6 +34,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.halil.ozel.recyclerviewsample.ui.theme.RecyclerViewSampleTheme
 import com.halil.ozel.recyclerviewsample.nationToFlag
+import com.halil.ozel.recyclerviewsample.genreToEmoji
 import dagger.hilt.android.AndroidEntryPoint
 
 enum class SortOption { NONE, AGE_ASC, AGE_DESC, NAME_ASC, NAME_DESC }
@@ -147,10 +148,10 @@ class MainActivity : ComponentActivity() {
                         .fillMaxWidth()
                         .padding(bottom = 16.dp)
                 )
-                Text(text = "Name: ${person.firstName} ${person.lastName}")
-                Text(text = "Age: ${person.age}")
-                Text(text = "Nation: ${nationToFlag(person.nation)} ${person.nation}")
-                Text(text = "Music Type: ${person.musicType}")
+                Text(text = "\uD83D\uDC64 Name: ${person.firstName} ${person.lastName}")
+                Text(text = "\uD83C\uDF82 Age: ${person.age}")
+                Text(text = "\uD83C\uDF0D ${nationToFlag(person.nation)} ${person.nation}")
+                Text(text = "${genreToEmoji(person.musicType)} ${person.musicType}")
             }
         }
     }
