@@ -25,6 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import coil.compose.AsyncImage
 import androidx.compose.ui.layout.ContentScale
+import com.halil.ozel.recyclerviewsample.genreToEmoji
 
 @Composable
 fun CustomItem(
@@ -58,7 +59,7 @@ fun CustomItem(
 
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    text = "\uD83C\uDFB6 ${person.firstName} ${person.lastName}",
+                    text = "${genreToEmoji(person.musicType)} ${person.firstName} ${person.lastName}",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
