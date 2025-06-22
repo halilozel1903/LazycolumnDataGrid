@@ -4,18 +4,13 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.foundation.border
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.material3.HorizontalDivider
+import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.halil.ozel.recyclerviewsample.ui.theme.RecyclerViewSampleTheme
@@ -37,24 +32,13 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun PersonList(people: List<Person>) {
-        Box(
+        LazyColumn(
             modifier = Modifier
                 .fillMaxWidth()
-                .wrapContentHeight()
-                .padding(12.dp)
-                .border(1.dp, Color.Gray)
+                .padding(vertical = 8.dp)
         ) {
-            LazyColumn(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .wrapContentHeight()
-            ) {
-                itemsIndexed(people) { index, person ->
-                    if (index > 0) {
-                        HorizontalDivider(thickness = 1.dp, color = Color.Gray)
-                    }
-                    CustomItem(person)
-                }
+            items(people) { person ->
+                CustomItem(person)
             }
         }
     }
