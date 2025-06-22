@@ -8,10 +8,19 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.SmallTopAppBar
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import coil.compose.AsyncImage
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -24,7 +33,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.halil.ozel.recyclerviewsample.ui.theme.RecyclerViewSampleTheme
+import com.halil.ozel.recyclerviewsample.nationToFlag
 import dagger.hilt.android.AndroidEntryPoint
+
+enum class SortOption { AGE_ASC, AGE_DESC, NAME_ASC, NAME_DESC }
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -50,13 +62,37 @@ class MainActivity : ComponentActivity() {
         people: List<Person>,
         onItemClick: (Person) -> Unit
     ) {
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(vertical = 8.dp)
-        ) {
-            items(people) { person ->
-                CustomItem(person = person, onClick = { onItemClick(person) })
+        var sortOption by remember { mutableStateOf(SortOption.AGE_ASC) }
+        val sortedPeople = remember(people, sortOption) {
+            when (sortOption) {
+                SortOption.AGE_ASC -> people.sortedBy { it.age }
+                SortOption.AGE_DESC -> people.sortedByDescending { it.age }
+                SortOption.NAME_ASC -> people.sortedBy { it.firstName }
+                SortOption.NAME_DESC -> people.sortedByDescending { it.firstName }
+            }
+        }
+
+        Column(modifier = Modifier.fillMaxSize()) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Button(onClick = { sortOption = SortOption.AGE_ASC }) { Text("Age \u2191") }
+                Button(onClick = { sortOption = SortOption.AGE_DESC }) { Text("Age \u2193") }
+                Button(onClick = { sortOption = SortOption.NAME_ASC }) { Text("A-Z") }
+                Button(onClick = { sortOption = SortOption.NAME_DESC }) { Text("Z-A") }
+            }
+
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 8.dp)
+            ) {
+                items(sortedPeople) { person ->
+                    CustomItem(person = person, onClick = { onItemClick(person) })
+                }
             }
         }
     }
@@ -81,30 +117,39 @@ class MainActivity : ComponentActivity() {
         }
     }
 
+    @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     fun PersonDetail(person: Person, onBack: () -> Unit) {
-        Column(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(16.dp)
-        ) {
-            AsyncImage(
-                model = person.imageUrl,
-                contentDescription = null,
-                contentScale = ContentScale.Fit,
+        Scaffold(
+            topBar = {
+                SmallTopAppBar(
+                    title = { Text(text = "${person.firstName} ${person.lastName}") },
+                    navigationIcon = {
+                        IconButton(onClick = onBack) {
+                            Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                        }
+                    }
+                )
+            }
+        ) { innerPadding ->
+            Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(bottom = 16.dp)
-            )
-            Text(text = "Name: ${person.firstName} ${person.lastName}")
-            Text(text = "Age: ${person.age}")
-            Text(text = "Nation: ${person.nation}")
-            Text(text = "Music Type: ${person.musicType}")
-            Button(
-                onClick = onBack,
-                modifier = Modifier.padding(top = 16.dp)
+                    .fillMaxSize()
+                    .padding(innerPadding)
+                    .padding(16.dp)
             ) {
-                Text(text = "Back")
+                AsyncImage(
+                    model = person.imageUrl,
+                    contentDescription = null,
+                    contentScale = ContentScale.Fit,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(bottom = 16.dp)
+                )
+                Text(text = "Name: ${person.firstName} ${person.lastName}")
+                Text(text = "Age: ${person.age}")
+                Text(text = "Nation: ${nationToFlag(person.nation)} ${person.nation}")
+                Text(text = "Music Type: ${person.musicType}")
             }
         }
     }
