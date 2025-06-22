@@ -27,6 +27,50 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
   <img src="screen-2.png" alt="Wrapped text" width="45%" />
 </p>
 
+### 📸 Additional Screens
+
+<p align="center">
+  <img src="pic1.png" alt="Initial list" width="300px" />
+  <br/>
+  <em>Default artist list view</em>
+</p>
+
+<p align="center">
+  <img src="pic2.png" alt="Age ascending" width="300px" />
+  <br/>
+  <em>List sorted by age (ascending)</em>
+</p>
+
+<p align="center">
+  <img src="pic3.png" alt="Age descending" width="300px" />
+  <br/>
+  <em>List sorted by age (descending)</em>
+</p>
+
+<p align="center">
+  <img src="pic4.png" alt="Name A-Z" width="300px" />
+  <br/>
+  <em>List sorted alphabetically (A-Z)</em>
+</p>
+
+<p align="center">
+  <img src="pic5.png" alt="Name Z-A" width="300px" />
+  <br/>
+  <em>List sorted alphabetically (Z-A)</em>
+</p>
+
+<p align="center">
+  <img src="pic6.png" alt="Detail screen" width="300px" />
+  <br/>
+  <em>Artist detail page</em>
+</p>
+
+<p align="center">
+  <img src="pic7.png" alt="Architecture" width="300px" />
+  <br/>
+  <em>Overall architecture overview</em>
+</p>
+
 
 ---
 
