@@ -18,7 +18,8 @@ class PersonRepository @Inject constructor() {
             age = 35,
             nation = "USA",
             musicType = "Pop / Country",
-            imageUrl = "https://picsum.photos/seed/taylor/200"
+            // Use a real photo instead of a placeholder
+            imageUrl = "https://source.unsplash.com/200x200/?taylor%20swift"
         ),
         Person(
             firstName = "Nicki",
@@ -26,7 +27,7 @@ class PersonRepository @Inject constructor() {
             age = 42,
             nation = "Trinidad and Tobago",
             musicType = "Hip Hop / Rap",
-            imageUrl = "https://picsum.photos/seed/nicki/200"
+            imageUrl = "https://source.unsplash.com/200x200/?nicki%20minaj"
         ),
         Person(
             firstName = "Tate",
@@ -34,7 +35,7 @@ class PersonRepository @Inject constructor() {
             age = 21,
             nation = "Canada",
             musicType = "Pop",
-            imageUrl = "https://picsum.photos/seed/tate/200"
+            imageUrl = "https://source.unsplash.com/200x200/?tate%20mcrae"
         ),
         Person(
             firstName = "Gracie",
@@ -42,7 +43,7 @@ class PersonRepository @Inject constructor() {
             age = 25,
             nation = "USA",
             musicType = "Indie Pop",
-            imageUrl = "https://picsum.photos/seed/gracie/200"
+            imageUrl = "https://source.unsplash.com/200x200/?gracie%20abrams"
         ),
         Person(
             firstName = "Becky",
@@ -50,7 +51,7 @@ class PersonRepository @Inject constructor() {
             age = 28,
             nation = "USA",
             musicType = "Pop / Latin",
-            imageUrl = "https://picsum.photos/seed/becky/200"
+            imageUrl = "https://source.unsplash.com/200x200/?becky%20g"
         ),
         Person(
             firstName = "Karol",
@@ -58,7 +59,7 @@ class PersonRepository @Inject constructor() {
             age = 34,
             nation = "Colombia",
             musicType = "Reggaeton / Latin Trap",
-            imageUrl = "https://picsum.photos/seed/karol/200"
+            imageUrl = "https://source.unsplash.com/200x200/?karol%20g"
         ),
         Person(
             firstName = "Selena",
@@ -66,7 +67,7 @@ class PersonRepository @Inject constructor() {
             age = 32,
             nation = "USA",
             musicType = "Pop",
-            imageUrl = "https://picsum.photos/seed/selena/200"
+            imageUrl = "https://source.unsplash.com/200x200/?selena%20gomez"
         ),
         Person(
             firstName = "Natti",
@@ -74,7 +75,7 @@ class PersonRepository @Inject constructor() {
             age = 38,
             nation = "Dominican Republic",
             musicType = "Reggaeton / Latin Pop",
-            imageUrl = "https://picsum.photos/seed/natti/200"
+            imageUrl = "https://source.unsplash.com/200x200/?natti%20natasha"
         ),
         Person(
             firstName = "Megan",
@@ -82,7 +83,7 @@ class PersonRepository @Inject constructor() {
             age = 30,
             nation = "USA",
             musicType = "Hip Hop / Rap",
-            imageUrl = "https://picsum.photos/seed/megan/200"
+            imageUrl = "https://source.unsplash.com/200x200/?megan%20thee%20stallion"
         ),
         Person(
             firstName = "Marina",
@@ -90,7 +91,7 @@ class PersonRepository @Inject constructor() {
             age = 38,
             nation = "Greece",
             musicType = "World / Pop",
-            imageUrl = "https://picsum.photos/seed/marina/200"
+            imageUrl = "https://source.unsplash.com/200x200/?marina%20satti"
         ),
         Person(
             firstName = "Elettra",
@@ -98,7 +99,7 @@ class PersonRepository @Inject constructor() {
             age = 30,
             nation = "Italy",
             musicType = "Pop / Dance",
-            imageUrl = "https://picsum.photos/seed/elettra/200"
+            imageUrl = "https://source.unsplash.com/200x200/?elettra%20lamborghini"
         ),
         Person(
             firstName = "Ice",
@@ -106,7 +107,7 @@ class PersonRepository @Inject constructor() {
             age = 25,
             nation = "USA",
             musicType = "Hip Hop / Rap",
-            imageUrl = "https://picsum.photos/seed/ice/200"
+            imageUrl = "https://source.unsplash.com/200x200/?ice%20spice"
         ),
         Person(
             firstName = "Anne",
@@ -114,7 +115,7 @@ class PersonRepository @Inject constructor() {
             age = 34,
             nation = "UK",
             musicType = "Pop",
-            imageUrl = "https://picsum.photos/seed/anne/200"
+            imageUrl = "https://source.unsplash.com/200x200/?anne%20marie"
         )
         )
     )
