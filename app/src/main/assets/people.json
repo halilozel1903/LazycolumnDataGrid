@@ -1,0 +1,106 @@
+[
+  {
+    "firstName": "Taylor",
+    "lastName": "Swift",
+    "age": 35,
+    "nation": "USA",
+    "musicType": "Pop / Country",
+    "imageUrl": "https://source.unsplash.com/200x200/?taylor%20swift"
+  },
+  {
+    "firstName": "Nicki",
+    "lastName": "Minaj",
+    "age": 42,
+    "nation": "Trinidad and Tobago",
+    "musicType": "Hip Hop / Rap",
+    "imageUrl": "https://source.unsplash.com/200x200/?nicki%20minaj"
+  },
+  {
+    "firstName": "Tate",
+    "lastName": "McRae",
+    "age": 21,
+    "nation": "Canada",
+    "musicType": "Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?tate%20mcrae"
+  },
+  {
+    "firstName": "Gracie",
+    "lastName": "Abrams",
+    "age": 25,
+    "nation": "USA",
+    "musicType": "Indie Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?gracie%20abrams"
+  },
+  {
+    "firstName": "Becky",
+    "lastName": "G",
+    "age": 28,
+    "nation": "USA",
+    "musicType": "Pop / Latin",
+    "imageUrl": "https://source.unsplash.com/200x200/?becky%20g"
+  },
+  {
+    "firstName": "Karol",
+    "lastName": "G",
+    "age": 34,
+    "nation": "Colombia",
+    "musicType": "Reggaeton / Latin Trap",
+    "imageUrl": "https://source.unsplash.com/200x200/?karol%20g"
+  },
+  {
+    "firstName": "Selena",
+    "lastName": "Gomez",
+    "age": 32,
+    "nation": "USA",
+    "musicType": "Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?selena%20gomez"
+  },
+  {
+    "firstName": "Natti",
+    "lastName": "Natasha",
+    "age": 38,
+    "nation": "Dominican Republic",
+    "musicType": "Reggaeton / Latin Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?natti%20natasha"
+  },
+  {
+    "firstName": "Megan",
+    "lastName": "Thee Stallion",
+    "age": 30,
+    "nation": "USA",
+    "musicType": "Hip Hop / Rap",
+    "imageUrl": "https://source.unsplash.com/200x200/?megan%20thee%20stallion"
+  },
+  {
+    "firstName": "Marina",
+    "lastName": "Satti",
+    "age": 38,
+    "nation": "Greece",
+    "musicType": "World / Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?marina%20satti"
+  },
+  {
+    "firstName": "Elettra",
+    "lastName": "Lamborghini",
+    "age": 30,
+    "nation": "Italy",
+    "musicType": "Pop / Dance",
+    "imageUrl": "https://source.unsplash.com/200x200/?elettra%20lamborghini"
+  },
+  {
+    "firstName": "Ice",
+    "lastName": "Spice",
+    "age": 25,
+    "nation": "USA",
+    "musicType": "Hip Hop / Rap",
+    "imageUrl": "https://source.unsplash.com/200x200/?ice%20spice"
+  },
+  {
+    "firstName": "Anne",
+    "lastName": "Marie",
+    "age": 34,
+    "nation": "UK",
+    "musicType": "Pop",
+    "imageUrl": "https://source.unsplash.com/200x200/?anne%20marie"
+  }
+]
