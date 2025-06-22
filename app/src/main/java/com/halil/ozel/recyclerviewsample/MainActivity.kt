@@ -35,7 +35,7 @@ import com.halil.ozel.recyclerviewsample.ui.theme.RecyclerViewSampleTheme
 import com.halil.ozel.recyclerviewsample.nationToFlag
 import dagger.hilt.android.AndroidEntryPoint
 
-enum class SortOption { AGE_ASC, AGE_DESC, NAME_ASC, NAME_DESC }
+enum class SortOption { NONE, AGE_ASC, AGE_DESC, NAME_ASC, NAME_DESC }
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -61,9 +61,10 @@ class MainActivity : ComponentActivity() {
         people: List<Person>,
         onItemClick: (Person) -> Unit
     ) {
-        var sortOption by remember { mutableStateOf(SortOption.AGE_ASC) }
+        var sortOption by remember { mutableStateOf(SortOption.NONE) }
         val sortedPeople = remember(people, sortOption) {
             when (sortOption) {
+                SortOption.NONE -> people
                 SortOption.AGE_ASC -> people.sortedBy { it.age }
                 SortOption.AGE_DESC -> people.sortedByDescending { it.age }
                 SortOption.NAME_ASC -> people.sortedBy { it.firstName }
