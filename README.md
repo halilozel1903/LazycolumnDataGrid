@@ -10,9 +10,13 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
 
 - **Modern card layout** with artist photos
 - **Multi-line support**: long names and genres wrap into new lines
-- **Dynamic data**: load from a simple `PersonRepository`
+- **Dynamic data**: loaded via a repository pattern
 - **Material 3** typography & theming
 - **Previewable UI** with `@Preview` functions
+- **MVVM architecture** powered by **Flow** and **Coroutines**
+- **Clean Architecture** separation with `domain`, `data` and `di` modules
+- **Dagger Hilt** dependency injection
+- **Coil** image loading
 
 ---
 
@@ -37,7 +41,7 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
 3. **Run** on emulator or device:  
    - API 21+  
    - Material 3 theme enabled  
-4. **Explore** `PersonRepository.kt` and `CustomItem.kt` for how the data & UI are wired up! 🧐
+4. **Explore** the `data` and `domain` layers along with `PersonViewModel` for a full MVVM setup. 🧐
 
 ---
 
@@ -45,9 +49,12 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
 
 ```
 ├── app/
+│   ├── src/main/java/…/data/                # Data layer implementation
+│   ├── src/main/java/…/domain/              # Domain layer interfaces & models
+│   ├── src/main/java/…/di/                  # Hilt modules
 │   ├── src/main/java/…/MainActivity.kt      # Hosts PersonList()
 │   ├── src/main/java/…/CustomItem.kt        # TableCell + Divider composables
-│   └── src/main/java/…/PersonRepository.kt  # Sample data source
+│   └── src/main/java/…/PersonViewModel.kt   # MVVM ViewModel
 ├── docs/
 │   └── screenshots/                         # Paste your screenshots here
 └── README.md                                # ← you are here!

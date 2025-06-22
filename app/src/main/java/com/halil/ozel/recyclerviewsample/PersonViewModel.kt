@@ -2,6 +2,7 @@ package com.halil.ozel.recyclerviewsample
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.halil.ozel.recyclerviewsample.domain.PersonRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
