@@ -148,7 +148,7 @@ class MainActivity : ComponentActivity() {
                 )
                 Text(text = "\uD83D\uDC64 Name: ${person.firstName} ${person.lastName}")
                 Text(text = "\uD83C\uDF82 Age: ${person.age}")
-                Text(text = "\uD83C\uDF0D ${nationToFlag(person.nation)} ${person.nation}")
+                Text(text = "\uD83C\uDF0D ${person.nation} ${nationToFlag(person.nation)}")
                 Text(text = "${genreToEmoji(person.musicType)} ${person.musicType}")
             }
         }
