@@ -20,13 +20,6 @@ A **Jetpack Compose** sample app that renders a list of artists in a clean, card
 
 ---
 
-## 📱 App Preview
-
-<p align="center">
-  <img src="screen-1.png" alt="Main list" width="45%" />
-  <img src="screen-2.png" alt="Wrapped text" width="45%" />
-</p>
-
 ### 📸 Additional Screens
 
 <p align="center">
