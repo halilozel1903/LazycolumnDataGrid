@@ -8,6 +8,7 @@ data class Person(
     val lastName: String,
     val age: Int,
     val nation: String,
-    val musicType: String
+    val musicType: String,
+    val imageUrl: String
 )
 
