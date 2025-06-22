@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.flowOf
 @Singleton
 class PersonRepository @Inject constructor() {
     fun getAllData(): Flow<List<Person>> = flowOf(
+        listOf(
         Person(
             firstName = "Taylor",
             lastName = "Swift",
@@ -114,6 +115,7 @@ class PersonRepository @Inject constructor() {
             nation = "UK",
             musicType = "Pop",
             imageUrl = "https://picsum.photos/seed/anne/200"
+        )
         )
     )
 }
